@@ -8,7 +8,7 @@ import Message from "components/Message";
 import Poster from "components/Poster";
 
 const Container = styled.div`
-  padding: 0px 20px;
+  padding: 20px;
 `;
 
 const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
@@ -26,7 +26,6 @@ const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
               title={show.original_name}
               rating={show.vote_average}
               year={show.first_air_date && show.first_air_date.substring(0, 4)}
-              isMovie={true}
             />
           ))}
         </Section>
@@ -41,7 +40,6 @@ const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
               title={show.original_name}
               rating={show.vote_average}
               year={show.first_air_date && show.first_air_date.substring(0, 4)}
-              isMovie={true}
             />
           ))}
         </Section>
@@ -56,7 +54,6 @@ const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
               title={show.original_name}
               rating={show.vote_average}
               year={show.first_air_date && show.first_air_date.substring(0, 4)}
-              isMovie={true}
             />
           ))}
         </Section>
